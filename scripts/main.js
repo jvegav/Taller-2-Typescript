@@ -15,7 +15,7 @@ function renderSeriesInTable(series) {
     });
 }
 function showSeriesDetail(serie) {
-    seriesDetail.innerHTML = "\n      <div class=\"card-body\">\n          <img src = ".concat(serie.img, "></img>\n          <h5 class=\"card-title\">").concat(serie.name, "</h5>\n          <p class=\"card-text\">").concat(serie.description, "</p>\n      </div>\n  ");
+    seriesDetail.innerHTML = "\n      <div class=\"card-body\">\n          <img src = ".concat(serie.img, "></img>\n          <br>\n          <h5 class=\"card-title\">").concat(serie.name, "</h5>\n          <p class=\"card-text\">").concat(serie.description, "</p>\n          <a href=").concat(serie.link, " target = \"_blank\">").concat(serie.link, "</a>\n          \n      </div>\n  ");
 }
 function getSeasons(series) {
     var promSeasons = 0;

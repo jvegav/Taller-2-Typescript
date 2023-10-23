@@ -40,6 +40,8 @@ function showSeriesDetail(serie : Serie) {
           <br>
           <h5 class="card-title">${serie.name}</h5>
           <p class="card-text">${serie.description}</p>
+          <a href=${serie.link} target = "_blank">${serie.link}</a>
+          
       </div>
   `;
 }
