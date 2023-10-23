@@ -10,11 +10,16 @@ table{
 
     
     margin-top: 50px;
+    margin-right: 350px;
     background-color: rgb(167, 170, 209);
     text-align: left;
     border-collapse:collapse ;
     width: 100%;
 
+}
+
+.div-1 {
+    background-color: #4abcb3;
 }
 
 
@@ -34,3 +39,14 @@ thead{
     background-color: rgb(127, 176, 255);
     border-bottom: solid 5px rgba(86, 101, 218, 0.4);
 }
+
+
+.card1{
+    background-color: rgb(158, 190, 241);
+
+    margin-top: 50px;
+
+    margin-right: 200px;
+}
+
+

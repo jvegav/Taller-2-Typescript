@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial 1</title>
 
@@ -9,13 +9,7 @@
     <link rel="stylesheet" href="style.css" >
 </head>
 
-<style>
 
-    .div-1 {
-        background-color: #4abcb3;
-    }
-
-</style>
 <body>
 
     <div class = "div-1">
@@ -23,44 +17,53 @@
     </div>
 
 
-    <div class = "div-centered">
+    <div class = "container-fluid">
+        <div class = "row">
+
+            <div class = "col">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id = "series"></tbody>
+                    
+                    <tbody >
+                        <tr>
+                            <td>
+                                Numero de temporadas
+                            </td>
+                            <td id="promedio-seasons">
+    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <table>
+                    <tbody id = "promedio-seasons"></tbody>
+                </table>
+
+            </div>
+                
+
+            <div class = "col">
+                <div id = "series-detail" class = "card1" >
+                    <!-- Aquí se mostrará el detalle de la serie seleccionada -->
+                </div>
+            </div>
 
        
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Channel</th>
-                        <th>Seasons</th>
-                        
-                    </tr>
-                </thead>
-                <tbody id = "series"></tbody>
-                
-                <tbody >
-                    <tr>
-                        <td>
-                            Numero de temporadas
-                        </td>
-                        <td id="promedio-seasons">
 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table>
-                <tbody id = "promedio-seasons"></tbody>
-            </table>
-
-
-
-   
+        </div>
 
 
     </div>
-
     <!-- Luego carga serie.js que define la clase Serie -->
     <script type="module" src="./scripts/serie.js"></script>
     
